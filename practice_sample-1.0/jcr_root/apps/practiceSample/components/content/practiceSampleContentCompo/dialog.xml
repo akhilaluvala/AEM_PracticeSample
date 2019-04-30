@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Text">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Text"
+                        name="./text"/>
+                    <textField
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Text Field"
+                        name="./textfield"
+                        xtype="textfield"/>
+                    <textarea
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Text Area"
+                        name="./textarea"
+                        xtype="textarea"/>
+                    <checkbox
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="CheckBox"
+                        name="./checkbox"
+                        type="checkbox"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <a
+                                jcr:primaryType="nt:unstructured"
+                                text="AAA"
+                                value="check A"/>
+                            <b
+                                jcr:primaryType="nt:unstructured"
+                                text="BBB"
+                                value="check B"/>
+                        </options>
+                    </checkbox>
+                    <multiField
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="MultiField"
+                        name="./multi"
+                        xtype="multifield"/>
+                </items>
+            </tab1>
+            <image
+                jcr:primaryType="cq:Panel"
+                title="Image">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <image
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image"
+                        name="./image"
+                        xtype="pathfield"/>
+                </items>
+            </image>
+        </items>
+    </items>
+</jcr:root>
